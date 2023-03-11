@@ -29,9 +29,22 @@ class MazeGenerator {
 
     public String getRawMaze() {
         StringBuilder sb = new StringBuilder();
-        for (int[] row : maze) {
-            sb.append(Arrays.toString(row) + "\n");
+
+        for (int i = 0; i < maze.length; i++) {
+            for (int j = 0; j < maze[i].length; j++) {
+                if (i == 0 && j == 0) {
+                    sb.append("A");
+                }
+                else if (i == dimension - 1 && j == dimension - 1) {
+                    sb.append("B");
+                }
+                else {
+                    sb.append(Integer.toString(1 - maze[i][j]));
+                }
+            }
+            sb.append("\n");
         }
+
         return sb.toString();
     }
 

@@ -1,9 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        MazeGenerator mazeGenerator = new MazeGenerator(30);
+        MazeGenerator mazeGenerator = new MazeGenerator(Integer.parseInt(args[0]));
         mazeGenerator.generateMaze();
 
-        System.out.println("RAW MAZE\n" + mazeGenerator.getRawMaze());
-        System.out.println("SYMBOLIC MAZE\n" + mazeGenerator.getSymbolicMaze());
+        System.out.println(mazeGenerator.getRawMaze());
     }
 }
