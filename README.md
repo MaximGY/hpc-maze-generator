@@ -1,4 +1,4 @@
-# maze-generator
+# hpc-maze-generator
 ## Introduction
 Generate a random maze represented as a 2D array of ones and zeros using depth-first search. PRs are welcome (especially to replace make...).
 
