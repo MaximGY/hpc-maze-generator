@@ -3,6 +3,6 @@ public class Main {
         MazeGenerator mazeGenerator = new MazeGenerator(Integer.parseInt(args[0]));
         mazeGenerator.generateMaze();
 
-        System.out.println(mazeGenerator.getRawMaze());
+        System.out.print(mazeGenerator.getRawMaze());
     }
 }
