@@ -1,12 +1,21 @@
 # maze-generator
 ## Introduction
-Generate a random maze represented as a 2D array of ones and zeros using depth-first search. Note that the "symbolic maze" generated is showing the actual path forged by the algorithm; if this were to be drawn as a true maze, the blank spaces and asterisks would be swapped so that blank spaces would represent the potential path and asterisks would represent walls.
+Generate a random maze represented as a 2D array of ones and zeros using depth-first search. PRs are welcome (especially to replace make...).
 
-## Next steps
-* Modify algorithm so that the path charted doesn't form awkward corners where asterisks are diagonal neighbors
-* Pick arbirary maze start and finish
-* Write complementary code to solve the generated mazes
-* Generate three dimensional mazes
+## Usage
+Installation is meant for *NIX OSes. To compile and install, simply:
+```sh
+make
+sudo make install
+```
+
+The program can be run as 
+```sh
+hpc-maze-generator 5 # Create 5x5 maze
+```
+
+Use `make clean` and `make uninstall` to clean the build directory or uninstall the program, respectively.
+
 
 ## Sample output
 ```
