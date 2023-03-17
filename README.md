@@ -11,7 +11,7 @@ sudo make install
 
 The program can be run as 
 ```sh
-hpc-maze-generator 5 # Create a 5x5 maze
+hpcmaze 5 # Create a 5x5 maze
 ```
 
 Use `make clean` and `make uninstall` to clean the build directory or uninstall the program, respectively.
